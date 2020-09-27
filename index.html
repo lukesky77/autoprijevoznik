@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autoprijevoznik Mirsad Ičanović</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="RWD.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+</head>
+<body>
+	<section id="header">
+		<div class="mask"></div>
+		<div class="navigation">
+			<img src="img/logo.jpg">
+			<button class="hamburger"></button>
+			<ul>
+				<li><a href="#footer">Kontakt</a></li>
+				<li><a href="#about-us">O nama</a></li>
+				<li><a href="#offer">Naša ponuda</a></li>
+				<li><a href="#index.html">Početna</a></li>
+			</ul>
+		</div>
+		<div class="header-inner">
+			<h2>Vaš partner u logistici.</h2>
+			<h4>Započnimo suradnju</h4>
+			<a href="#footer">KONTAKTIRAJTE NAS</a>
+		</div>
+	</section>
+	<section id="about-us">
+		<div class="wrapper">
+			<div class="content">
+				<h3>O nama </h3>
+				<p>Firma je osnovana 1997. godine te se prvobitno bavila transportom nafte i naftnih derivata. Postavljamo nove tržišne standarde i pružanje usluga našim klijentima koji poboljšavaju naše performanse u svakom našem području
+				aktivnost. Savršeno znamo da je najbolja metoda za izgradnju dugoročne konkurencije
+				prednost na tržištu je usredotočenost na potrebe i očekivanja klijenta, poput Kvalitete,
+				Pouzdanost, Fleksibilnost, Sigurnost i Atraktivne cijene. Problemi naših klijenata su naši problemi.
+				Ovdje smo da ih riješimo. Pravilo "što je prije moguće" odnosi se ne samo na organizirane i
+				osigurane prijevoze, ali i brzina kojom odgovaramo na vaše upite.</p>
+			</div>
+			<div class="imgBox">
+				<img class="shadow" src="img/druga.jpg">
+			</div>
+		</div>
+	</section>
+<section id="offer">
+	<div class="wrapper">	
+			<div class="left-col">
+				<h3>naša ponuda</h3>
+				<p>Vrijeme je novac - zato djelujemo brzo i učinkovito. Kad odaberemo nekoliko paleta, kod nas plaćate kao nekoliko paleta, ne kao cijelu prikolicu. Zato imamo najniže cijene u prijevozu generalnog tereta.</p>
+			</div>
+			<div class="right-col">
+				<details open>
+				  <summary>Nadzor dostave 24h</summary>
+				  <p>Možete nas nazvati u bilo kojem trenutku, a mi ćemo vam uvijek dati informacije o tome gdje se nalazi vaš teret i kada točno predviđamo vrijeme isporuke.</p>
+				</details>
+		<details>
+	    <summary>Logistika</summary>
+				  <p>Znamo činjenicu da svaka firma ima svoje specifičnosti i zahtjeve u vezi s logistikom. Uvijek pružamo i predlažemo naše najbolje rješenje koje udovoljava vašim potrebama</p>
+				</details>
+			</div>
+		</div>
+	</section>
+	<section id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2159901909654!2d16.37857601596094!3d45.46545277910085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766ee0cc9acd82b%3A0xe86a5d03f2c6e4d0!2s%C5%A0kolska%20ul.%204I%2C%2044000%2C%20Sisak!5e0!3m2!1shr!2shr!4v1600513150656!5m2!1shr!2shr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+	</section>
+	<section id="footer">
+		<div class="wrapper last">
+			<div class="left-col padding">
+				<div class="textBox">
+					<i class="fas fa-phone"></i>
+					<p class="margin">+385 98-256-217</p>
+				</div>
+				<div class="textBox">
+					<i class="fas fa-envelope"></i>
+					<p class="margin">icanovic.mirsad@hotmail.com</p>
+				</div>
+				<div class="textBox">
+					<i class="fas fa-map-marker-alt"></i>
+					<p class="margin">AP Mirsad Ičanović</p>
+					<p class="margin">Sisak , 44000</p>
+					<p class="margin">Školska 4i</p>
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="input-wrap">
+					<h4>Upit za prijevoz</h4>
+					<div class="input-inner">
+						<div class="alertbox">Molimo ispravno popunite sva polja!</div>
+
+						<input id="mail_email" type="email" name="email" placeholder="E-mail adress">
+						<input id="mail_phone" type="text" name="phone" placeholder="Phone number">
+						<textarea id="mail_message" name="message" placeholder="Message"></textarea>
+						<button id="mail_submit">Pošalji</button>
+						<p class="form-message"></p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>&#9400;All copyrights 2020 apicanovic.com</span>
+				<img src="img/logo.jpg">
+				<span>Designed by Lukesky01</span>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.hamburger').click(function(){
+				$('ul').toggleClass('active')
+				$(this).toggleClass('active')
+			})
+
+			function telephoneCheck(str) {
+			  var isphone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(str);
+			  return isphone;
+			}
+
+			function validateEmail(email) {
+			  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			  return re.test(email);
+			}
+
+
+		function checkFields() {
+			if ( $('#mail_email').val()!='' && $('#mail_phone').val()!='' && $('#mail_message').val()!='') {
+				if (telephoneCheck($('#mail_phone').val()) && validateEmail($('#mail_email').val())) {
+					return true;
+				} 
+			}
+
+			return false;
+		}
+
+		$('#mail_phone, #mail_email, #mail_message').on('keyup', function() {
+	        if (telephoneCheck($('#mail_phone').val())) {
+				$('#mail_phone').removeClass('error');
+			} else {
+				$('#mail_phone').addClass('error');
+			}
+	        if (validateEmail($('#mail_email').val())) {
+				$('#mail_email').removeClass('error');
+			} else {
+				$('#mail_email').addClass('error');
+			}
+		});
+
+		$('#mail_submit').click(function(){
+			var postForm = { 
+	            'email': $('#mail_email').val(),
+	            'phone': $('#mail_phone').val(),
+	            'message': $('#mail_message').val(),
+	        };
+
+
+
+				if (checkFields()) {
+					
+					$.ajax({
+		    	        url: "send.php",
+		    	        type: "post",
+		    	        data: postForm ,
+		    	        success: function (response) {
+		    	        	if (response) {
+		    	        		$('.alertbox').addClass('ok').html('Zahvaljujemo na slanju.');
+		    	        	}
+		    	        },
+		    	        error: function(jqXHR, textStatus, errorThrown) {
+		    	           console.log(textStatus, errorThrown);
+		    	        }
+		    	    });
+				} else {
+					$('.alertbox').show();
+				}
+
+			})
+
+		})
+	</script>
+</body>
+</html>

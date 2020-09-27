@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+#header {
+	background-image: url("img/prva.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .2;
+	z-index: -1;
+}
+.navigation {
+	width: 100%;
+	padding: 0px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0 0 25px rgba(0,0,0,.5);
+}
+.navigation ul {
+	width: 100%;
+}
+.navigation ul li {
+	display: inline-block;
+	margin: 0 20px;
+	float: right;
+}
+.navigation ul li a:hover {
+	border-bottom: 3px solid #9e7a7a;
+    padding: 3px;
+    transition: all .2s ease;
+    font-size: 20px;
+    color: #9e7a7a;
+}
+.navigation ul li a {
+	text-decoration: none;
+	font-family: 'Maven Pro';
+	color: #333333;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 19px;
+	letter-spacing: 1.2px;
+}
+.header-inner {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 600px;
+	height: 500px;
+}
+.header-inner h2 {
+	font-family: 'Rokkitt';
+	color: #fff;
+	font-size: 94px;
+	font-weight: 600;
+	letter-spacing: -0.63px;
+}
+.header-inner h4 {
+	font-family: 'Quicksand';
+	color: #fff;
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: -0.35px;
+	text-transform: uppercase;
+}
+.header-inner a {
+    text-decoration: none;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    border: 3px solid #fff;
+    padding: 5px 15px;
+    font-size: 19px;
+}
+.header-inner a:hover {
+	font-size: 21px;
+	border: 4px solid #fff;
+}
+#about-us {
+	width: 100%;
+}	
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.content {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	padding: 20px;
+	text-align: center;
+}
+.content p {
+	color: #95a5a6;
+	font-family: 'Maven Pro';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: -0.29px;
+}
+.content h3 {
+	color: #e74c3c;
+	font-family: 'Maven Pro';
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.59px;
+	position: relative;
+	padding-bottom: 25px;
+	margin-top: 0;
+}
+.content h3:before {
+	content: '';
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:0 auto;
+	background-color: #e74c3c;
+}
+.imgBox {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+}
+.imgBox img {
+	background-size: cover;
+	background-position: center;
+	width: 70%;
+}
+.shadow {
+	box-shadow: 0 25px 30px rgba(0,0,0,.5);
+}
+.content-wrap {
+	margin: 0 auto;
+}
+.content-wrap ul {
+    text-align: center;
+    width: 30%;
+    padding: 0;
+    margin: 0 auto;
+}
+.content-wrap ul li {
+    list-style: none;
+    background-color: #e74c3c;
+    color: #f3f3f3;
+    font-family: 'Quicksand';
+    margin: 5px 0;
+    font-size: 29px;
+    box-shadow: 0 0px 10px rgba(0,0,0,.5);
+    font-weight: 700;
+}
+.content-wrap ul li:nth-child(2n+2) {
+	transform: translateX(10%);
+}
+.content-wrap ul li:nth-child(2n+1) {
+	transform: translateX(-10%);
+}
+#offer {
+	width: 100%;
+	background-color: #f4f4f4;
+}
+.left-col {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+.left-col h3 {
+	color: #4e4141;
+	font-family: 'Maven Pro';
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.59px;
+	position: relative;
+	padding-bottom: 25px;
+	margin-top: 0;
+}
+.left-col h3:before {
+	content: '';
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	left: 0;
+	bottom: 0;
+	background-color: #4e4141;
+}
+.left-col p {
+	color: #95a5a6;
+	font-family: 'Maven Pro';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: -0.29px;
+}
+.right-col {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 15px 70px 15px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+details + details {
+  margin-top: 30px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Rokkitt';
+}
+
+summary {
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Maven Pro';
+  color: #4e4141;
+}
+summary:focus {
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #4e4141;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f078";
+  transform: translateY(-50%);
+  transition: .3s ease;
+}
+
+details[open] summary::after {
+  content: "\f057";
+  font-size: 30px;
+  top: 0;
+  transform: translateY(0);
+  transition: .3s ease;
+}
+#map {
+	width: 100%;
+}
+#footer .left-col .textBox {
+    padding: 15px;
+    text-align: center;
+    margin: 25px 0;
+}
+#footer .left-col .textBox i {
+	font-size: 30px;
+    color: #e74c3c;
+}
+#footer .right-col {
+	text-align: left;
+}
+#footer .right-col h4 {
+	font-family: 'Maven Pro';
+    font-size: 30px;
+    color: #e74c3c;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#footer .right-col .input-inner {
+	padding: 20px 0;
+}
+#footer .right-col .input-inner input {
+	display: block;
+    font-size: 15px;
+    margin: 15px 0;
+    font-family: 'quicksand';
+    padding: 15px 50px 15px 25px;
+    width: 65%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#footer .right-col .input-inner textarea {
+    display: block;
+    width: 65%;
+    height: 200px;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-family: 'quicksand';
+    padding: 15px 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#footer .right-col .input-inner button {
+    color: #ffffff;
+    font-weight: 700;
+    border: 2px solid #e74c3c;
+    background-color: #e74c3c;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: "Maven Pro";
+    font-size: 19px;
+    cursor: pointer;
+}
+.margin {
+	margin: 0;
+}
+.padding {
+	padding: 85px;
+}
+.last {
+	padding: 50px 0 0 0;
+}
+.copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.copyright * {
+		margin: 0 50px;
+}
+.copyright span {
+	font-family: 'Rokkitt';
+	color: #4e4141;
+	font-size: 18px;
+	font-weight: 600;
+}
+.input-error {
+	color: red;
+}
+.mobile {
+	width: 100%;
+	display: block;
+}
+.hamburger {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid #000;
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+  display: none;
+  outline: 0;
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #000;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger.active {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+
+}
+
+.hamburger.active:after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+
+.error {
+	border: 1px solid red !important;
+}
+
+.alertbox {
+	border: red;
+	display: none;
+	color: #000;
+    font-family: 'Maven Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.29px;
+}
+
+
+.alertbox.ok {
+	border: green++;
+}
